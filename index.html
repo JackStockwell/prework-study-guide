@@ -67,13 +67,28 @@
           <br>
           GitHub is great for developers who are collaborating on a project but is also used to store code on the cloud ready to be accessed by another machine.
           <br>
+          <h4>GitHub Terms</h4>
+          <ul>
+            <li>All projects on GitHub are called repositories. It's a folder that has all your assets and previous versions of your project.</li>
+            <li>A Branch is a workspace where you can make changes that don't affect the live site. You create a new branch for your work, naming it correctly such as a date and what you're working on.</li>
+            <li>All files on GitHub are formatted in Markdown. It is used as a way to write for the web using plain text as it easily converts to HTML. Markdown files end with .md extension.</li>
+            <li>Once you have made changes in the Markdown, you will Commit the changes, saving a new version of the file you are working on. Whenever you change, edit or delete in a file, you're making a commit. All commits you make will be saved to the branch you're working on.</li>
+            <li>Pull requests is the act of asking for changes made to a branch to be merged into another branch, this allows others users to see, discuss and review the work that was made.</li>
+            <li>After the pull request is approved. The commit will be Merged from one branch to another then deployed on the live site.</li>
+        </p>
+        <div> 
+          <p>
           Git commands can be entered into Git, they are however not the same as Bash commands. Git commands always start with git and can be used to save and track versions of our code. Using Git commands we can create repositories, add code to them and view previous versions of our code, each stored with a unique commit.
           <br>
-          A few examples of git commands can be found below:
+          An example of the comnmands used in the GitHub workflow:
           <ul>
-            <li>git checkout main - Will switch to your main branch.</li>
+            <li>git checkout main - Will switch to your main branch, main can be subsidised for other branches.</li>
             <li>git status - Shows which branch you're wroking on.</li>
-            <li>git checkout -b 'name' - Creates a new branch with it's designated name, will switch to the branch after it has been made.</li>
+            <li>git checkout -b 'BranchName' - Creates a new branch with it's designated name, will switch to the branch after it has been made.</li>
+            <li>git add -A - Add all the files in the working branch to be staged.</li>
+            <li>git commit -m "added extra content to HTML file" - Used to commit our staged files to be sent to our repository, the -m tag adds a comment so everyone knows what you're changing/adding.</li>
+            <li>git pull - Pulls the base branch into your feature branch to ensure it is sync, this is important incase others have made changes to the base branch that are not in your feature branch.</li>
+            <li>git push origin 'BranchName' - This will push our changes to the GitHub repo. The rest of the work is done via GitHub website.</li>
           </ul>
         </p>
       </section>
