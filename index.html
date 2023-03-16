@@ -33,13 +33,15 @@
           </ul>
           Structuring the above elements together creates a frame of a webpage that allows for a user to traverse and navigate. HTML can be compared to building a house of sorts, with HTML being the foundation and framework that eventually the walls are made out of, a sturdy frame means a stronger house. Once complete CSS can be used to make it pretty and make it 'yours' while JS will explain the logic of your house, such as how you and the user will interact with the doors and windows of this house.
         </p>
-        <br>
         <p>
           There are many, many HTML tags that can be used throughout a web application, here is a small list of the main ones that will be encountered:
         <ul>
+          <li>The !DOCTYPE declaration tells the browser that it is loading a HTML document</li>
           <li>The html element is used as the start and the end of all your websites content, this includes the head element and body element.</li>
           <li>The head element containts metadata information about the webpage, the text inside will not be rendered on browsers and is for the browser itself.</li>
+          <li>The meta element contains information used by the browser. More inforamtion can be found <a href="https://www.w3schools.com/tags/tag_meta.asp">here</a></li>
           <li>The body element represnets the visible content shown to the user, the content you wish for the the end user to use will be placed in here.</li>
+          <li>The style element defines the CSS styles related to the website</li>
         </ul>
         </p>
       </section>
@@ -54,13 +56,11 @@
           Git Bash is an application that allows us to navigate a computer's operating system.
           Git is a terminal that enables us to use the Command Line Interface (CLI) to enter commands for the shell to execute.
         </p>
-        <br>
         <h3>Command Line Interface</h3>
         <p>
           The Command Line Interface (CLI) allows us to input text commands to execute operating system functions, such as file exploration and or creating 
           a new folder. Many years ago this would have been the default way to navigate your computer's file system but nowadays user-friendly GUIs exist, however it is an important for a developer to still be able to use this method as a way to navigate through files and run commands.
         </p>
-        <br>
         <h3>GitHub</h3>
         <p>
           GitHub is the web interface for Git Bash (Version Control) it allows multiple users to make separate changes to a program at the same time, due to GitHub being 'on the cloud' it can be done remotely without requiring a local connection to a server. 
@@ -75,20 +75,22 @@
             <li>Once you have made changes in the Markdown, you will Commit the changes, saving a new version of the file you are working on. Whenever you change, edit or delete in a file, you're making a commit. All commits you make will be saved to the branch you're working on.</li>
             <li>Pull requests is the act of asking for changes made to a branch to be merged into another branch, this allows others users to see, discuss and review the work that was made.</li>
             <li>After the pull request is approved. The commit will be Merged from one branch to another then deployed on the live site.</li>
+          </ul>
         </p>
-        <div> 
-          <p>
+        <h4>Git Commands</h4>
+        <p>
           Git commands can be entered into Git, they are however not the same as Bash commands. Git commands always start with git and can be used to save and track versions of our code. Using Git commands we can create repositories, add code to them and view previous versions of our code, each stored with a unique commit.
           <br>
-          An example of the comnmands used in the GitHub workflow:
+          An example of the comnmands used in the Git flow:
           <ul>
             <li>git checkout main - Will switch to your main branch, main can be subsidised for other branches.</li>
             <li>git status - Shows which branch you're wroking on.</li>
             <li>git checkout -b 'BranchName' - Creates a new branch with it's designated name, will switch to the branch after it has been made.</li>
             <li>git add -A - Add all the files in the working branch to be staged.</li>
             <li>git commit -m "added extra content to HTML file" - Used to commit our staged files to be sent to our repository, the -m tag adds a comment so everyone knows what you're changing/adding.</li>
-            <li>git pull - Pulls the base branch into your feature branch to ensure it is sync, this is important incase others have made changes to the base branch that are not in your feature branch.</li>
+            <li>git pull origin main - Pulls the base branch into your feature branch to ensure it is sync, this is important incase others have made changes to the base branch that are not in your feature branch.</li>
             <li>git push origin 'BranchName' - This will push our changes to the GitHub repo. The rest of the work is done via GitHub website.</li>
+            <li>The rest will be guided on GitHub a guide can be seen <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request?tool=webui">here</a></a></li>
           </ul>
         </p>
       </section>
