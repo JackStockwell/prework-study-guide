@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img class= "bowtieimg" src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -138,11 +139,100 @@
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
-        <p>Java notes here!</p>
+        <p>
+          <span style="font-weight: bold">JavaScript</span> is a critical tool to web development, it adds interactivity, effects, data communication and more. Re-visiting the house analogy is what allows us to open the doors of the house, turning the lights on and off etc. 
+        </p>
+        <p>
+          Developers have written a large variety of tools on top of the core JavaScript language, offering a wide range of functionality with little effort involved. These include:
+          <ul>
+            <li>APIs are built into web browsers, they provide additional functionality such as generating 3D graphics, providing audio samples and the ability to dynamically create HTML and CSS.</li>
+            <li>Third party APIs allow you to incorporate functionality from other sites like YouTube or Facebook.</li>
+            <li>Third party frameworks and libraries that can be used in your own HTML code to speed up the process of building your website.</li>
+          </ul>
+        </p>
+            <h3>Data Types</h3>
+            <table>
+              <tbody>
+              <tr>
+                <th>Variable</th>
+                <th>Explanation</th>
+                <th>Example</th>
+              </tr>
+              <tr>
+                <td>String</td>
+                <td>A sequence of text is known as a string. To signify that the value is a string it is enclosed with quote marks</td>
+                <td><code class="codeintext">let myVariable = “Jack”;</code></td>
+              </tr>
+              <tr>
+                <td>Number</td>
+                <td>Numbers do not have quotes around them</td>
+                <td><code class="codeintext">let myVariable = 10;</code></td>
+              </tr>
+              <tr>
+                <td>Boolean</td>
+                <td>A true/false value. True and False do not need quotations</td>
+                <td><code class="codeintext">let myVariable = false;</code></td>
+              </tr>
+              <tr>
+                <td>Array</td>
+                <td></td>
+                <td><code class="codeintext">let  myVariable =[1, 'Jack', 'Jake', 10];</code><br>They can be selected with the below:<br><code class="codeintext">myVariable[0], myVariable [1]</code> etc.</td>
+              </tr>
+              <tr>
+                <td>Objects</td>
+                <td>This can be anything. Everything in JS is an object and can be stored as a variable.</td>
+                <td><code class="codeintext">let myVariable = document.querySelector('h1')</code>
+              </tr>
+              </tbody>
+            </table>
+            <h3>Operators</h3>
+            <p>
+              Operators is a mathematical symbol that produces a result based on two values (or variables). 
+            </p>
+            <h3>Conditionals</h3>
+            <p>
+              Conditionals are used to test if an expression returns true or not. A common form of conditionals is the <code class=”codeintext”>if…else</code> statement.
+            <code>
+              <pre>
+      let iceCream = "chocolate";
+      if (iceCream === "chocolate") {
+       alert("Yay, I love chocolate ice cream!");
+      } else {
+       alert("Awwww, but chocolate is my favorite…");
+      }
+              </pre>
+            </code>          
+            </p>
+        <h3>Functions</h3>
+        <p>
+          Are a way of packaging functionality that you wish to re-use. It's possible to define a body of code as a function that executes when you call the function name in your code. Saving us having to re-write our code.
+        </p>
+        <p>
+          Functions may look similar to a variable, but if it is followed by parentheses ( ) is more likely to be a function. We fill the parentheses with Arguments, which is a value passed as input to a function.
+        </p>
+        <p>
+          JavaScript allows us to create our own functions. The below will create a multiply function by taking two numbers as arguments.
+        </p>
+        <code>
+          <pre>
+      function multiply(num1, num2) {
+      let result = num1 * num2;
+       return result;
+      }            
+          </pre>
+          </code>
+        <h3>For Loop</h3>
+          <p>
+            A for loop uses the predictable pattern of indices to perform a task. The computer will go through each of the values in the array, which when paired with another statement like a conditional if statement it will stop the loop by running the code associated with the if statement. A for loop begins with a three-part conditional statement followed by a code that will be executed once the loop is complete.
+          </p>
+          <p>
+            The loop needs a starting point and a condition, this is done by setting the var x =0 meaning it will start on the first index of our array, the second statement is the condition in which as long as x is less than the length of the array length it will continue to run; this is shown with x < myVariable.length;. The final statement is what we tell the array to iterate over each item, since an array's index is +1 along every step, x++ is a quick and simple way to tell the loop to x+1.
+          </p>
       </section>
     </main>
     <footer>
       <p class="footerp">I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
