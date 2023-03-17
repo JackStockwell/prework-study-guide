@@ -52,7 +52,7 @@ p {
 }
 .codeintext {
     background-color: #c2c2c2;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding-left: 4px;
     padding-right: 4px;
     color: black;
